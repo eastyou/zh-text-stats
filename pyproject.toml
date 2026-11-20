@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zh-text-stats"
+version = "0.1.0"
+description = "中文文本统计 CLI：字数、汉字、标点、段落、阅读时长与高频词"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "eastyou" }]
+keywords = ["chinese", "text", "statistics", "cli", "writing"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Environment :: Console",
+  "Natural Language :: Chinese (Simplified)",
+]
+
+[project.scripts]
+zhstats = "zhstats.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/eastyou/zh-text-stats"
+Source = "https://github.com/eastyou/zh-text-stats"
+
+[tool.setuptools]
+packages = ["zhstats"]
